@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  text-align: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  margin: 10px 10px;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+      grid-template-areas: ". title title title ." ". user . computer ." ". screen1 . screen2 ." ". screen1 text screen2 ." ". screen1 . screen2 ." ". userOutcome . computerOutcome ." ". icons icons icons .";
+}
+
+.container #title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  padding: 10px;
+}
+
+.container #title h1 {
+  text-decoration: underline;
+}
+
+.container #user {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: user;
+  padding: 10px;
+}
+
+.container #computer {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: computer;
+  padding: 10px;
+}
+
+.container #screen1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: screen1;
+}
+
+.container #screen2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: screen2;
+}
+
+.container #text {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: text;
+}
+
+.container #userOutcome {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: userOutcome;
+  padding: 20px;
+}
+
+.container #computerOutcome {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: computerOutcome;
+  padding: 20px;
+}
+
+.container #icons {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: icons;
+  margin-right: 40px;
+}
+
+.container #icons button {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px lightgrey;
+          box-shadow: 2px 2px lightgrey;
+}
+
+.container #icons button:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+}
+
+.container img {
+  border: 2px solid black;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px lightslategray;
+          box-shadow: 3px 3px lightslategray;
+  border-radius: 10px;
+}
+
+.vid {
+  height: 30vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px lightslategrey;
+          box-shadow: 5px 5px lightslategrey;
+}
+/*# sourceMappingURL=style.css.map */

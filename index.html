@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" type="module"></script>
+  <title>Rock-Paper-Scissors!!!</title>
+</head>
+<body>
+  <div class="container">
+    <div id="title">
+      <h1>Rock-Paper-Scissors!</h1>
+    </div>
+    <div id="user" class="player">
+      <h2>Player</h1><p id="userScore">0</p>
+    </div>
+    <div id="computer" class="player">
+      <h2>Computer</h1><p id="computerScore">0</p>
+    </div>
+    <div id="screen1" class="screen">
+      <p id="userScreen">
+        <video autoplay muted loop class="vid">
+        <source src="https://media.giphy.com/media/B0yg6yWnfVpEA/giphy.mp4" type="video/mp4">
+      </video>
+    </p>
+    </div>
+    <p id="text">V/S</p>
+    <div id="screen2" class="screen">
+      <p id="computerScreen">
+        <video autoplay muted loop class="vid">
+        <source src="https://media.giphy.com/media/1Mng0gXC5Tpcs/giphy.mp4" type="video/mp4">
+      </video>
+    </p>
+    </div>
+    <p id="userOutcome"></p>
+    <p id="computerOutcome"></p>
+    <div id="icons">
+      <button id="paper">Paper</button>
+      <button id="rock">Rock</button>
+      <button id="scissor">scissor</button>
+    </div>
+  </div>
+</body>
+</html>
